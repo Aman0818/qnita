@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- SITE TITTLE -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QNITA By NIT Agartala</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- PLUGINS CSS STYLE -->
+  <!-- Bootstrap -->
+  <link href="/static/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Themefisher Font -->  
+  <link href="/static/plugins/themefisher-font/style.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="/static/plugins/font-awsome/css/font-awesome.min.css" rel="stylesheet">
+  <!-- Magnific Popup -->
+  <link href="/static/plugins/magnific-popup/magnific-popup.css" rel="stylesheet">
+  <!-- Slick Carousel -->
+  <link href="/static/plugins/slick/slick.css" rel="stylesheet">
+  <link href="/static/plugins/slick/slick-theme.css" rel="stylesheet">
+  <!-- CUSTOM CSS -->
+  <link href="/static/css/style.css" rel="stylesheet">
+
+  <!-- FAVICON -->
+  <link href="/static/images/favicon.png" rel="shortcut icon">
+
+</head>
+<body class="body-wrapper">
+	
+<nav style="background-color: rgba(0, 0, 0, 0.8); box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); padding: 10px 0;" class="navbar fixed-top navbar-expand-lg">
+  <div class="container-fluid">
+
+    <!-- Logo -->
+    <a class="navbar-brand" href="/" style="font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 2rem; text-transform: uppercase; letter-spacing: 3px; color: rgba(106, 0, 182, 0.93); text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);">
+		<img src="static/images/logo.png" alt="QNITA Logo" style="width: 100px; height: auto;">
+	</a>
+	
+
+    <!-- Toggler button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="border: none;">
+      <span style="color: white;"><i class="fa fa-bars"></i></span>
+    </button>
+
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/" style="color: white; font-size: 1rem; padding: 10px 20px; transition: all 0.3s;">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/#sponsors" style="color: white; font-size: 1rem; padding: 10px 20px; transition: all 0.3s;">SPONSORS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/#schedule" style="color: white; font-size: 1rem; padding: 10px 20px; transition: all 0.3s;">SCHEDULE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/#speakers" style="color: white; font-size: 1rem; padding: 10px 20px; transition: all 0.3s;">SPEAKERS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/parrticipatingInsti" style="color: white; font-size: 1rem; padding: 10px 20px; transition: all 0.3s;">PARTICIPATING INSTITUTES</a>
+        </li>
+		<li class="nav-item dropdown">
+			<a class="nav-link" href="#" id="navbarPages" role="button" aria-haspopup="true" aria-expanded="false" style="color: white; font-size: 1rem; padding: 10px 20px; transition: all 0.3s;">
+			  MORE
+			</a>
+			<div class="dropdown-menu" aria-labelledby="navbarPages" style="background-color: rgba(0, 0, 0, 0.8);">
+				<a class="dropdown-item" href="/#members" style="color: white; transition: all 0.3s;">TEAM MEMBER</a>
+				<a class="dropdown-item" href="/aboutUs" style="color: white; transition: all 0.3s;">ABOUT US</a>
+			  <a class="dropdown-item" href="/#blogs" style="color: white; transition: all 0.3s;">BLOGS</a>
+			  <a class="dropdown-item" href="/#faq" style="color: white; transition: all 0.3s;">FAQ</a>
+			</div>
+		  </li>
+      </ul>
+
+      <a href="https://lu.ma/event/evt-47iwsontHsnGnDv" data-luma-action="checkout" data-luma-event-id="evt-47iwsontHsnGnDv" style="color: white; text-decoration: none;">
+        <div style="padding: 10px 20px; background: linear-gradient(90deg, rgba(106, 0, 182, 0.93), black); border-radius: 50px; color: white; text-align: center; transition: all 0.3s;">
+          REGISTER FOR EVENT
+        </div>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<!--====  End of Navigation Section  ====-->
+{% block content %}
+<!--============================
+=            Banner            =
+=============================-->
+<section class="banner bg-banner-one">
+	<div id="particles-js"></div>
+	<!-- Background Video -->
+	<video class="bg-video" autoplay muted loop playsinline>
+	  <source src="/static/video/background.mp4" type="video/mp4">
+	  Your browser does not support the video tag.
+	</video>
+	
+	<div class="container">
+	  <div class="row">
+		<div class="col-lg-12">
+		  <!-- Content Block -->
+		  <div class="block">
+			<h1 style="font-family: 'Poppins', sans-serif; font-size: 6rem; font-weight: 700; color: white; text-transform: uppercase; text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);">
+			  <span style="color: rgba(106, 0, 182, 0.93);">Q</span>NITA '24
+			</h1>
+			<h2 style="font-family: 'Poppins', sans-serif; font-size: 2rem; font-style: normal; font-weight: 400; color: white; text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6); letter-spacing: 1px;">
+			  Hosted by IBM and Qiskit
+			</h2>
+			<h6 style="font-family: 'Poppins', sans-serif; font-size: 1.2rem; font-weight: 300; color: white; text-transform: uppercase; text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); letter-spacing: 2px;">.
+			  <span id="dynamic-text"></span>
+			</h6>
+			<!-- Action Button -->
+			<a href="https://lu.ma/event/evt-47iwsontHsnGnDv" data-luma-action="checkout" data-luma-event-id="evt-47iwsontHsnGnDv" class="btn btn-gradient" style="padding: 10px 20px; background: linear-gradient(120deg, rgba(106, 0, 182, 0.93), black); border-radius: 50px; color: white; text-align: center; transition: all 0.3s; text-transform: uppercase; letter-spacing: 2px; z-index: 1100;">
+				REGISTER NOW
+			  </a>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </section>
+  
+  
+<!--====  End of Banner  ====-->
+<section class="registration" style="padding-left: 80px; padding-right: 80px; padding-top: 120px; padding-bottom: 100px;">
+    <div class="container-fluid" style="padding: 50px 0;">
+        <div class="row justify-content-center">
+            {% for label, value in {'Speakers': '10+', 'Seats': '500+', 'Participants': '1000+', 'Days Event': '14'}.items() %}
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                <div class="stat-item text-center" style="background-color: #000000; color: #fff; padding: 40px 20px; border-radius: 15px; position: relative; overflow: hidden; transition: all 0.3s ease; box-shadow: rgba(142, 0, 199, 0.734) 0px 7px 29px 0px;">
+                    <div style="position: absolute; top: 0; left: 0; height: 100%; width: 5px; background: linear-gradient(180deg, rgba(142, 0, 199, 1) 0%, rgba(255, 0, 85, 1) 100%);"></div>
+                    <h2 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 10px;">{{ value }}</h2>
+                    <p style="font-size: 1.1rem; margin: 0;">{{ label }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+
+<!--====  End of Registration  ====-->
+<!--==== About  ====-->
+<section class="section about" style="background-color: #000; color: #fff; padding: 50px 0;">
+    <div class="container">
+        <div class="row">
+            <!-- Text Content Section -->
+            <div class="col-lg-6 align-self-center">
+                <div class="content-block" data-aos="fade-right" style="text-align: justify;">
+                    <h4 style="text-transform: uppercase; font-weight: 600; letter-spacing: 1px;">Welcome To</h4>
+                    <h2 style="font-weight: 700; font-size: 3rem;">NIT Agartala's Qiskit Fall Fest</h2>
+                    <p style="line-height: 1.8; margin: 20px 0; text-align: justify;">
+                        Welcome to NIT Agartala’s very first Qiskit Fall Fest, a thrilling journey into the realm of quantum computing, brought to you in collaboration with IBM!
+                    </p>
+                    <p style="line-height: 1.8; margin-bottom: 20px; text-align: justify;">
+                        Whether you're an experienced quantum wizard or completely new to the field, this event is designed to spark your curiosity and fuel your passion for this trailblazing technology.
+                    </p>
+
+                    <ul style="list-style-type: none; padding-left: 0; margin-bottom: 30px;">
+                        <li style="display: flex; align-items: center; margin-bottom: 10px;">
+                            <span style="color: rgb(74, 4, 150); margin-right: 10px;"><i class="fa fa-check-circle" aria-hidden="true"></i></span> Hands-on workshops, challenges, and hackathons
+                        </li>
+                        <li style="display: flex; align-items: center; margin-bottom: 10px;">
+                            <span style="color: rgb(74, 4, 150); margin-right: 10px;"><i class="fa fa-check-circle" aria-hidden="true"></i></span> Learn all the fundamentals from scratch
+                        </li>
+                        <li style="display: flex; align-items: center; margin-bottom: 10px;">
+                            <span style="color: rgb(74, 4, 150); margin-right: 10px;"><i class="fa fa-check-circle" aria-hidden="true"></i></span> Connect with the brightest minds in quantum computing
+                        </li>
+                    </ul>
+
+                    <a href="/aboutUs" class="btn btn-main-md" style="background-color: #6200EA; color: #fff; padding: 10px 20px; border-radius: 50px; text-transform: uppercase; font-weight: 600; text-decoration: none;">Read More</a>
+                </div>
+            </div>
+
+            <!-- Single Image Section -->
+            <div class="col-lg-6 d-none d-lg-block">
+				<div class="image-block" data-aos="fade-left" style="box-shadow: rgba(106, 0, 182, 0.4) 5px 5px, rgba(106, 0, 182, 0.3) 10px 10px, rgba(106, 0, 182, 0.2) 15px 15px, rgba(106, 0, 182, 0.1) 20px 20px, rgba(106, 0, 182, 0.05) 25px 25px;">
+					<img src="/static/images/speakers/about.png" class="img-fluid rounded" alt="Event Image" style="border-radius: 10px; width: 100%; height: auto;">
+				</div>
+			</div>
+			
+        </div>
+    </div>
+</section>
+
+<!--====  End of About  ====-->
+
+
+<!--==============================
+=            hosted            =
+===============================-->
+<section class="sponsors section ">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="section-title">
+					<h3>HOSTED <span class="alternate">BY</span></h3>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusm tempor incididunt ut labore dolore</p>
+				</div>
+			</div>
+		</div>
+		<div class="row" data-aos="zoom-out-down">
+			<div class="col-12">
+				<!-- Title -->
+				<div class="sponsor-title text-center">
+				</div>
+				<div class="block text-center" >
+					<!-- Sponsors image list -->
+					<ul class="list-inline sponsors-list">
+						<li class="list-inline-item">
+							<div class="image-block text-center" style="border">
+								<a href="#">
+									<img src="/static/images/sponsors/ibm.png" alt="sponsors-logo" class="img-fluid">
+								</a>
+							</div>
+						</li>
+						<li class="list-inline-item">
+							<div class="image-block text-center">
+								<a href="#">
+									<img src="/static/images/sponsors/nita.png" alt="sponsors-logo" class="img-fluid">
+								</a>
+							</div>
+						</li>
+						<li class="list-inline-item">
+							<div class="image-block text-center">
+								<a href="#">
+									<img src="/static/images/sponsors/qiskit.png" alt="sponsors-logo" class="img-fluid">
+								</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--====  End of hosted  ====-->
+<!--==================================
+
+<!--==============================
+=            Speakers            =
+===============================-->
+
+<section class="section speakers" id="speakers">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<!-- Section Title -->
+				<div class="section-title black">
+					<h3>OUR <span class="alternate">SPEAKERS</span></h3>
+					<p>Unveiling the minds shaping the quantum frontier—meet the esteemed speakers of Qiskit Fall Fest, guiding us into the future of quantum innovation. 
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="row" data-aos="zoom-out-down">
+			{%for i in range(4)%}
+			<div class="col-lg-3 col-md-4 col-sm-6">
+				<!-- Speaker 1 -->
+				<div class="speaker-item" style="box-shadow: 0 60px 80px rgba(106, 0, 182, 0.60), 0 45px 26px rgba(106, 0, 182, 0.14);">
+					<div class="image">
+						<img src="/static/images/speakers/speaker-two.jpg" alt="speaker" class="img-fluid">
+						<div class="primary-overlay"></div>
+						<div class="socials">
+							<ul class="list-inline">
+								<li class="list-inline-item"><a href="#"><i class="fa fa-envelope"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="content text-center">
+						<h5><a href="#">SPEAKER NAME</a></h5>
+						<p style="color:black;">Designation</p>
+					</div>
+				</div>
+			</div>
+			{%endfor%}
+		</div>
+	</div>
+</section>
+
+<!--====  End of Speakers  ====-->
+<!--==============================
+=            Schedule            =
+===============================-->
+
+<section class="section schedule" id="schedule">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="section-title">
+					<h3>EVENT <span class="alternate">SCHEDULE</span></h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusm tempor incididunt ut labore.</p>
+				</div>
+			</div>
+		</div>
+		<div class="row" data-aos="zoom-out-up">
+			<div class="col-12">
+				<div class="schedule-tab">
+					<ul class="nav nav-pills text-center">
+						<li class="nav-item">
+							<a class="nav-link active" href="#nov20" data-toggle="pill">
+								Day-01
+								<span>20 October 2024</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#nov21" data-toggle="pill">
+								Day-02
+								<span>21 October 2024</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#nov22" data-toggle="pill">
+								Day-03
+								<span>22 October 2024</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="schedule-contents">
+					<div class="tab-content" id="pills-tabContent">
+						<div class="tab-pane fade show active schedule-item" id="nov20">
+							<!-- Headings -->
+							<ul class="m-0 p-0">
+								<li class="headings">
+									<div class="time">Time</div>
+									<div class="speaker">Speaker</div>
+									<div class="subject">Subject</div>
+									<div class="venue">Venue</div>
+								</li>
+								{% for event in range(8) %}
+								<li class="schedule-details">
+									<div class="block">
+										<!-- Time -->
+										<div class="time">
+											<i class="fa fa-clock-o"></i>
+											<span class="time">9.00 AM</span>
+										</div>
+										<!-- Speaker -->
+										<div class="speaker">
+											<img src="https://via.placeholder.com/50" alt="speaker-thumb-one">
+											<span class="name">Speaker</span>
+										</div>
+										<!-- Subject -->
+										<div class="subject">Dummy Subject</div>
+										<!-- Venue -->
+										<div class="venue">Auditorium</div>
+									</div>
+								</li>
+								{% endfor %}
+							</ul>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--====  End of Schedule  ====-->
+
+<!--==============================
+=            Sponsors            =
+===============================-->
+
+<section class="sponsors section " id='sponsors'>
+	<div class="container">
+		<div class="row" data-aos="zoom-out-up">
+			<div class="col-12">
+				<div class="section-title">
+					<h3>OUR <span class="alternate">SPONSORS</span></h3>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusm tempor incididunt ut labore dolore</p>
+				</div>
+			</div>
+		</div>
+		<div class="row" data-aos="zoom-out-up">
+			<div class="col-12">
+				<!-- Title -->
+				<div class="sponsor-title text-center">
+				</div>
+				<div class="block text-center">
+					<!-- Sponsors image list -->
+					<ul class="list-inline sponsors-list">
+						<li class="list-inline-item">
+							<div class="image-block text-center">
+								<a href="#">
+								</a>
+							</div>
+						</li>
+						<li class="list-inline-item">
+							<div class="image-block text-center">
+								<a href="#">
+								</a>
+							</div>
+						</li>
+						<li class="list-inline-item">
+							<div class="image-block text-center">
+								<a href="#">
+								</a>
+							</div>
+						</li>
+						<li class="list-inline-item">
+							<div class="image-block text-center">
+								<a href="#">
+								</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!-- Title -->
+				<div class="sponsor-title text-center">
+				</div>
+				<div class="block text-center">
+					<!-- Sponsors image list -->
+					<ul class="list-inline sponsors-list">
+						<li class="list-inline-item">
+							<div class="image-block text-center">
+								<a href="#">
+								</a>
+							</div>
+						</li>
+						<li class="list-inline-item">
+							<div class="image-block text-center">
+								<a href="#">
+								</a>
+							</div>
+						</li>
+						<li class="list-inline-item">
+							<div class="image-block text-center">
+								<a href="#">
+								</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="sponsor-btn text-center">
+					<a href="#" class="btn btn-main-md">Become a sponsor</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--====  End of Sponsors  ====-->
+
+<!--====  start of blogs  ====-->
+
+<section class="news section" id="blogs">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="section-title">
+					<h3>EVENT <span class="alternate">BLOGS</span></h3>
+					<p>Stay updated with the latest buzz from the quantum world! Our event blog captures key highlights, expert insights, and behind-the-scenes moments from Qiskit Fall Fest, keeping you in the loop on all things quantum.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="row" data-aos="zoom-out-up">
+			<div class="col-lg-4 col-md-6 col-sm-8 col-10 m-auto">
+				<div class="blog-post">
+					<div class="post-thumb">
+						<a href="news-single.html">
+							<img src="https://via.placeholder.com/370x235" alt="post-image" class="img-fluid">
+						</a>
+					</div>
+					<div class="post-content">
+						<div class="date">
+							<h4>20<span>OCT</span></h4>
+						</div>
+						<div class="post-title">
+							<h2><a href="news-single.html">Dummmy Blog of event</a></h2>
+						</div>
+						<div class="post-meta">
+							<ul class="list-inline">
+								<li class="list-inline-item">
+									<i class="fa fa-user-o"></i>
+									<a href="#">Admin</a>
+								</li>
+								<li class="list-inline-item">
+									<i class="fa fa-heart-o"></i>
+									<a href="#">350</a>
+								</li>
+								<li class="list-inline-item">
+									<i class="fa fa-comments-o"></i>
+									<a href="#">30</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-8 col-10 m-auto">
+				<div class="blog-post">
+					<div class="post-thumb">
+						<a href="news-single.html">
+							<img src="https://via.placeholder.com/370x235" alt="post-image" class="img-fluid">
+						</a>
+					</div>
+					<div class="post-content">
+						<div class="date">
+							<h4>21<span>OCT</span></h4>
+						</div>
+						<div class="post-title">
+							<h2><a href="news-single.html">Dummmy Blog of event</a></h2>
+						</div>
+						<div class="post-meta">
+							<ul class="list-inline">
+								<li class="list-inline-item">
+									<i class="fa fa-user-o"></i>
+									<a href="#">Admin</a>
+								</li>
+								<li class="list-inline-item">
+									<i class="fa fa-heart-o"></i>
+									<a href="#">350</a>
+								</li>
+								<li class="list-inline-item">
+									<i class="fa fa-comments-o"></i>
+									<a href="#">30</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 m-md-auto col-sm-8 col-10 m-auto">
+				<div class="blog-post">
+					<div class="post-thumb">
+						<a href="news-single.html">
+							<img src="https://via.placeholder.com/370x235" alt="post-image" class="img-fluid">
+						</a>
+					</div>
+					<div class="post-content">
+						<div class="date">
+							<h4>22<span>OCT</span></h4>
+						</div>
+						<div class="post-title">
+							<h2><a href="news-single.html">Dummmy Blog of event</a></h2>
+						</div>
+						<div class="post-meta">
+							<ul class="list-inline">
+								<li class="list-inline-item">
+									<i class="fa fa-user-o"></i>
+									<a href="#">Admin</a>
+								</li>
+								<li class="list-inline-item">
+									<i class="fa fa-heart-o"></i>
+									<a href="#">350</a>
+								</li>
+								<li class="list-inline-item">
+									<i class="fa fa-comments-o"></i>
+									<a href="#">30</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--====  End of blogs  ====-->
+<!--==============================
+=            members            =
+===============================-->
+
+<section style="padding: 60px 0; background-color: #000000;" id="members">
+    <div style="max-width: 1200px; margin: 0 auto;">
+        <!-- Section Heading -->
+        <div style="margin-bottom: 50px; margin-top: 60px; text-align: center;">
+            <h3 style="color: #fff;">TEAM <span class="alternate">MEMBERS</span></h3>
+            <p style="color: rgba(255, 255, 255, 0.9);">Meet the brilliant minds behind Qiskit Fall Fest! Our dedicated team of innovators and enthusiasts is working tirelessly to bring the magic of quantum computing to life at NIT Agartala</p>
+        </div>
+
+        <!-- Organizers -->
+        <div style="margin-bottom: 40px;">
+            <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 20px;">
+				{% for i in ['Divyansh Singhal', 'Ganesh Rehan Balivada', 'Saptadip Saha', 'Aditya Raj'] %}
+				<div style="background:#000000; border-radius: 15px; overflow: hidden; box-shadow: rgba(106, 0, 182, 0.93) 0px 10px 150px 0px; transition: all 0.4s ease-in-out; cursor: pointer; width: calc(25% - 20px); min-width: 200px; position: relative;">
+
+					{% if i == 'Divyansh Singhal' %}
+						<div style="position: absolute; top: +20px; right: -40px; background-color: #272727; color: #fff; padding: 10px 60px; font-size: 0.9rem; font-weight: bold; text-align: center; transform: rotate(45deg); box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);">
+							Lead
+						</div>
+					{% endif %}
+
+					<div style="padding: 30px 20px; text-align: center;">
+						<div style="position: relative; width: 150px; height: 150px; border-radius: 50%; margin: 0 auto; overflow: hidden; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); transition: transform 0.4s ease;">
+							<img src="https://via.placeholder.com/150" alt="{{ i }}" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+						</div>
+						<div style="margin-top: 20px;">
+							<p style="font-size: 1rem; font-weight: bold; color: #fff;">{{ i.upper() }}</p>
+							<div style="display: inline-block; padding: 5px 15px; background: transparent; border: 2px solid #800080; border-radius: 20px; color: #fff; font-size: 0.8rem; margin-top: 10px;">
+								Organizers
+							</div>
+				
+							<hr style="border-color: #555; margin: 20px 0;">
+
+							<div style="display: flex; justify-content: center; gap: 15px;">
+								<a href="#" style="width: 40px; height: 40px; background: #fff; display: flex; align-items: center; justify-content: center; border-radius: 50%;">
+									<i class="fa fa-linkedin" style="color: #800080; font-size: 1.5rem;"></i>
+								</a>
+								<a href="#" style="width: 40px; height: 40px; background: #fff; display: flex; align-items: center; justify-content: center; border-radius: 50%;">
+									<i class="fa fa-instagram" style="color: #800080; font-size: 1.5rem;"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>				
+			{% endfor %}
+
+            </div>
+        </div>
+
+        <!-- Developers -->
+        <div style="margin-bottom: 40px;">
+            <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 20px;">
+				{% for i, j in {'Aman Mishra':'Devloper','Soham Dey':'Public Relations', 'Sreejit Das':'Public Relations','Katta Keerthi Priya':'Public Relations','Vidhi Mittal':'Content','Kattamuri Sri Gayatri':'Content','Pratyush Baliarsingh':'Marketing','Srishant Kumar':'Graphics','Parmesh Lata':'Graphics','Avinash':'Multimedia ','Jyotshika':'Multimedia '}.items() %}
+                <div style="background:#000000; border-radius: 15px; overflow: hidden; box-shadow: rgba(106, 0, 182, 0.93) 0px 10px 150px 0px; transition: all 0.4s ease-in-out; cursor: pointer; width: calc(25% - 20px); min-width: 200px; position: relative;">
+					{% if i in ['Aman Mishra','Soham Dey','Vidhi Mittal','Pratyush Baliarsingh','Srishant Kumar'] %}
+						<div style="position: absolute; top: +20px; right: -40px; background-color: #272727; color: #fff; padding: 10px 60px; font-size: 0.9rem; font-weight: bold; text-align: center; transform: rotate(45deg); box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);">
+							Lead
+						</div>
+					{% endif %}
+					<div style="padding: 30px 20px; text-align: center;">
+						<div style="position: relative; width: 150px; height: 150px; border-radius: 50%; margin: 0 auto; overflow: hidden; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); transition: transform 0.4s ease;">
+							<img src="https://via.placeholder.com/150" alt="Aman Mishra" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+						</div>
+						<div style="margin-top: 20px;">
+							<p style="font-size: 1rem; font-weight: bold; color: #fff;">{{i.upper()}}</p>
+							<div style="display: inline-block; padding: 5px 15px; background: transparent; border: 2px solid #800080; border-radius: 20px; color: #fff; font-size: 0.8rem; margin-top: 10px;">
+								{{j}}
+							</div>
+				
+							<hr style="border-color: #555; margin: 20px 0;">
+			
+							<div style="display: flex; justify-content: center; gap: 15px;">
+								<a href="#" style="width: 40px; height: 40px; background: #fff; display: flex; align-items: center; justify-content: center; border-radius: 50%;">
+									<i class="fa fa-linkedin" style="color: #800080; font-size: 1.5rem;"></i>
+								</a>
+								<a href="#" style="width: 40px; height: 40px; background: #fff; display: flex; align-items: center; justify-content: center; border-radius: 50%;">
+									<i class="fa fa-instagram" style="color: #800080; font-size: 1.5rem;"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				{% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--====  End of members  ====-->
+<!--=========================
+=            FAQ            =
+==========================-->
+
+<section class="section faq" id="faq">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="section-title">
+					<h3>SOME <span class="alternate">FAQ</span></h3>
+					<p>Got questions about the event? Don't worry, we've collapsed the wave of uncertainty into a set of clear answers.Have a look at these FAQs to resolve any entanglements before the Qiskit Fall Fest begins!
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="accordion-block">
+					<div id="accordion">
+						<!-- Collapse -->
+						<div class="card">
+							<!-- Collapse Header -->
+							<div class="card-header" id="headingOne">
+							  <h5 class="mb-0">
+							    <a data-toggle="collapse" href="#collapseOne">
+							      <span class="fa fa-plus-circle"></span> Prior knowledge is required for attendees?
+							    </a>
+							  </h5>
+							</div>
+							<!-- Collapse Body -->
+							<div id="collapseOne" class="collapse show" data-parent="#accordion">
+							  <div class="card-body">
+							    No prior experience with quantum computing is needed! Even if you're unfamiliar with Python or quantum mechanics, don't worry — we’ll cover the basics in a clear and concise manner.
+							  </div>
+							</div>
+						</div>
+						<!-- Collapse -->
+						<div class="card">
+							<!-- Collapse Header -->
+							<div class="card-header" id="headingOne">
+							  <h5 class="mb-0">
+							    <a data-toggle="collapse" href="#collapseTwo">
+							      <span class="fa fa-plus-circle"></span>How can I stay updated on event news?
+							    </a>
+							  </h5>
+							</div>
+							<!-- Collapse Body -->
+							<div id="collapseTwo" class="collapse" data-parent="#accordion">
+							  <div class="card-body">
+							    Stay tuned by following our social media channels and regularly checking our website for the latest updates.
+							  </div>
+							</div>
+						</div>
+						<!-- Collapse -->
+						<div class="card">
+							<!-- Collapse Header -->
+							<div class="card-header" id="headingOne">
+							  <h5 class="mb-0">
+							    <a data-toggle="collapse" href="#collapseThree">
+							      <span class="fa fa-plus-circle"></span>Where does it come from?
+							    </a>
+							  </h5>
+							</div>
+							<!-- Collapse Body -->
+							<div id="collapseThree" class="collapse" data-parent="#accordion">
+							  <div class="card-body">
+							    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.
+							  </div>
+							</div>
+						</div>
+						<!-- Collapse -->
+						<div class="card">
+							<!-- Collapse Header -->
+							<div class="card-header" id="headingOne">
+							  <h5 class="mb-0">
+							    <a data-toggle="collapse" href="#collapseFour">
+							      <span class="fa fa-plus-circle"></span>Where does it come from?
+							    </a>
+							  </h5>
+							</div>
+							<!-- Collapse Body -->
+							<div id="collapseFour" class="collapse" data-parent="#accordion">
+							  <div class="card-body">
+							    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.
+							  </div>
+							</div>
+						</div>
+						<!-- Collapse -->
+						<div class="card">
+							<!-- Collapse Header -->
+							<div class="card-header" id="headingOne">
+							  <h5 class="mb-0">
+							    <a data-toggle="collapse" href="#collapseFive">
+							      <span class="fa fa-plus-circle"></span>Where does it come from?
+							    </a>
+							  </h5>
+							</div>
+							<!-- Collapse Body -->
+							<div id="collapseFive" class="collapse" data-parent="#accordion">
+							  <div class="card-body">
+							    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.
+							  </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="accordion-block">
+					<div id="accordionTwo">
+						<!-- Collapse -->
+						<div class="card">
+							<!-- Collapse Header -->
+							<div class="card-header" id="headingOne">
+							  <h5 class="mb-0">
+							    <a data-toggle="collapse" href="#collapseSix">
+							      <span class="fa fa-plus-circle"></span>Where does it come from?
+							    </a>
+							  </h5>
+							</div>
+							<!-- Collapse Body -->
+							<div id="collapseSix" class="collapse" data-parent="#accordionTwo">
+							  <div class="card-body">
+							    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.
+							  </div>
+							</div>
+						</div>
+						<!-- Collapse -->
+						<div class="card">
+							<!-- Collapse Header -->
+							<div class="card-header" id="headingOne">
+							  <h5 class="mb-0">
+							    <a data-toggle="collapse" href="#collapseSeven">
+							      <span class="fa fa-plus-circle"></span>Where does it come from?
+							    </a>
+							  </h5>
+							</div>
+							<!-- Collapse Body -->
+							<div id="collapseSeven" class="collapse" data-parent="#accordionTwo">
+							  <div class="card-body">
+							    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.
+							  </div>
+							</div>
+						</div>
+						<!-- Collapse -->
+						<div class="card">
+							<!-- Collapse Header -->
+							<div class="card-header" id="headingOne">
+							  <h5 class="mb-0">
+							    <a data-toggle="collapse" href="#collapseEight">
+							      <span class="fa fa-plus-circle"></span>Where does it come from?
+							    </a>
+							  </h5>
+							</div>
+							<!-- Collapse Body -->
+							<div id="collapseEight" class="collapse" data-parent="#accordionTwo">
+							  <div class="card-body">
+							    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.
+							  </div>
+							</div>
+						</div>
+						<!-- Collapse -->
+						<div class="card">
+							<!-- Collapse Header -->
+							<div class="card-header" id="headingOne">
+							  <h5 class="mb-0">
+							    <a data-toggle="collapse" href="#collapseNine">
+							      <span class="fa fa-plus-circle"></span>Where does it come from?
+							    </a>
+							  </h5>
+							</div>
+							<!-- Collapse Body -->
+							<div id="collapseNine" class="collapse" data-parent="#accordionTwo">
+							  <div class="card-body">
+							    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.
+							  </div>
+							</div>
+						</div>
+						<!-- Collapse -->
+						<div class="card">
+							<!-- Collapse Header -->
+							<div class="card-header" id="headingOne">
+							  <h5 class="mb-0">
+							    <a data-toggle="collapse" href="#collapseTen">
+							      <span class="fa fa-plus-circle"></span>Where does it come from?
+							    </a>
+							  </h5>
+							</div>
+							<!-- Collapse Body -->
+							<div id="collapseTen" class="collapse" data-parent="#accordionTwo">
+							  <div class="card-body">
+							    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.
+							  </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--====  End of FAQ  ====-->
+{% endblock %}
+<!--============================
+=            Footer            =
+=============================-->
+
+<footer style="background-color: #212121; color: #fff; padding: 40px 0;">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+            <!-- Contact Info -->
+            <div style="flex: 1; min-width: 250px; margin-bottom: 30px;">
+                <h4 style="border-bottom: 2px solid #fff; padding-bottom: 10px; margin-bottom: 20px; color: white">CONTACT <span class="alternate">INFO</span></h4>
+                <ul style="list-style: none; padding: 0; ">
+                    <li><p style="margin: 0;">Address: National Institute of Technology Agartala
+						Jirania , West Tripura <br>Pin - 799046</p></li>
+                    <li><a href="#" style=" text-decoration: none;">Phone: +8880 44338899</a></li>
+                    <li><a href="mailto:info@yourdomain.com" style=" text-decoration: none;">Email: info@yqnita.com</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div style="border-top: 1px solid #fff; padding: 20px 0; margin-top: 30px;">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <!-- Copyright Notice -->
+                <div style="flex: 1;">
+                    <p style="margin: 0; font-size: 0.9rem;">
+                        COPYRIGHT &copy; ALL RIGHTS RESERVRED | QNITA (NIT AGARTALA)
+                    </p>
+                </div>
+                <!-- Social Media Links -->
+                <div style="flex: 1; text-align: right;">
+					<a href="#" style="color: #fff; font-size: 1.5rem; margin: 0 10px;" title="Youtube"><i class="fa fa-youtube"></i></a>
+                    <a href="#" style="color: #fff; font-size: 1.5rem; margin: 0 10px;" title="Instagram"><i class="fa fa-instagram"></i></a>
+                    <a href="#" style="color: #fff; font-size: 1.5rem; margin: 0 10px;" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+  <!-- JAVASCRIPTS -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="/static/js/particles.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+		AOS.init({
+			offset:200,
+		});
+  </script>
+  <script>
+		const phrases = ["Quantum Computing Event", "Event Hosted By NIT Agartala", "Quantum Event", "Hackathon & much more..."];
+		let i = 0;
+		let j = 0;
+		let currentPhrase = [];
+		let isDeleting = false;
+	
+		function loop() {
+		const targetElement = document.getElementById('dynamic-text');
+		
+		// Smoothly update the text without flickering
+		targetElement.innerHTML = currentPhrase.join('');
+	
+		if (!isDeleting && j < phrases[i].length) {
+			currentPhrase.push(phrases[i][j]);
+			j++;
+		} else if (isDeleting && j > 0) {
+			currentPhrase.pop();
+			j--;
+		} else if (!isDeleting && j === phrases[i].length) {
+			isDeleting = true;
+			setTimeout(loop, 1000); // Pause before starting to delete
+			return;
+		} else if (isDeleting && j === 0) {
+			isDeleting = false;
+			i++;
+			if (i === phrases.length) {
+			i = 0; // Restart from first phrase
+			}
+		}
+	
+		// Adjust typing and deleting speeds
+		const speed = isDeleting ? 50 : 100;
+		setTimeout(loop, speed);
+		}
+	
+		loop();
+  </script>
+   <!-- lma -->
+  <script id="luma-checkout" src="https://embed.lu.ma/checkout-button.js"></script>
+  <!-- jQuey -->
+  <script src="/static/plugins/jquery/jquery.js"></script>
+  <!-- Popper js -->
+  <script src="/static/plugins/popper/popper.min.js"></script>
+  <!-- Bootstrap 4 -->
+  <script src="/static/plugins/bootstrap/js/bootstrap.min.js"></script>
+  <!-- Smooth Scroll -->
+  <script src="/static/plugins/smoothscroll/SmoothScroll.min.js"></script>  
+  <!-- Isotope -->
+  <script src="/static/plugins/isotope/mixitup.min.js"></script>  
+  <!-- Magnific Popup -->
+  <script src="/static/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+  <!-- Slick Carousel -->
+  <script src="/static/plugins/slick/slick.min.js"></script>  
+  <!-- SyoTimer -->
+  <script src="/static/plugins/syotimer/jquery.syotimer.min.js"></script>
+  <!-- Custom Script -->
+  <script src="/static/js/custom.js"></script>
+</body>
+
+</html>
+
+
+
