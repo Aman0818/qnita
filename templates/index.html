@@ -902,7 +902,6 @@
 
   <!-- JAVASCRIPTS -->
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  <script src="/static/js/particles.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
 		AOS.init({
@@ -918,8 +917,7 @@
 	
 		function loop() {
 		const targetElement = document.getElementById('dynamic-text');
-		
-		// Smoothly update the text without flickering
+
 		targetElement.innerHTML = currentPhrase.join('');
 	
 		if (!isDeleting && j < phrases[i].length) {
@@ -930,17 +928,16 @@
 			j--;
 		} else if (!isDeleting && j === phrases[i].length) {
 			isDeleting = true;
-			setTimeout(loop, 1000); // Pause before starting to delete
+			setTimeout(loop, 1000); 
 			return;
 		} else if (isDeleting && j === 0) {
 			isDeleting = false;
 			i++;
 			if (i === phrases.length) {
-			i = 0; // Restart from first phrase
+			i = 0; 
 			}
 		}
-	
-		// Adjust typing and deleting speeds
+
 		const speed = isDeleting ? 50 : 100;
 		setTimeout(loop, speed);
 		}
@@ -959,6 +956,7 @@
   <script src="/static/plugins/smoothscroll/SmoothScroll.min.js"></script>  
   <!-- Isotope -->
   <script src="/static/plugins/isotope/mixitup.min.js"></script>  
+  <script src="/static/js/particles.js"></script>
   <!-- Magnific Popup -->
   <script src="/static/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
   <!-- Slick Carousel -->
