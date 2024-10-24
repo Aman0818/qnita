@@ -541,12 +541,18 @@
         <!-- Organizers -->
         <div style="margin-bottom: 40px;">
             <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 20px;">
-				{% for i in ['Divyansh Singhal', 'Ganesh Rehan Balivada', 'Saptadip Saha','Aditya Raj' ] %}
+				{% for i in ['Divyansh Singhal', 'Ganesh Rehan Balivada', 'Saptadip Saha', 'Aditya Raj'] %}
 				<div style="background:#000000; border-radius: 15px; overflow: hidden; box-shadow: rgba(106, 0, 182, 0.93) 0px 10px 150px 0px; transition: all 0.4s ease-in-out; cursor: pointer; width: calc(25% - 20px); min-width: 200px; position: relative;">
+
+					{% if i == 'Divyansh Singhal' %}
+						<div style="position: absolute; top: +20px; right: -40px; background-color: #272727; color: #fff; padding: 10px 60px; font-size: 0.9rem; font-weight: bold; text-align: center; transform: rotate(45deg); box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);">
+							Lead
+						</div>
+					{% endif %}
 
 					<div style="padding: 30px 20px; text-align: center;">
 						<div style="position: relative; width: 150px; height: 150px; border-radius: 50%; margin: 0 auto; overflow: hidden; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); transition: transform 0.4s ease;">
-							<img src="https://via.placeholder.com/150" alt="{{ i }}" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+							<img src="/static/images/{{i.replace(" ","")}}.jpeg" alt="{{ i }}" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
 						</div>
 						<div style="margin-top: 20px;">
 							<p style="font-size: 1rem; font-weight: bold; color: #fff;">{{ i.upper() }}</p>
@@ -584,7 +590,7 @@
 					{% endif %}
 					<div style="padding: 30px 20px; text-align: center;">
 						<div style="position: relative; width: 150px; height: 150px; border-radius: 50%; margin: 0 auto; overflow: hidden; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); transition: transform 0.4s ease;">
-							<img src="https://via.placeholder.com/150" alt="Aman Mishra" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+							<img src="/static/images/{{i.replace(" ","")}}.jpeg" alt="Aman Mishra" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
 						</div>
 						<div style="margin-top: 20px;">
 							<p style="font-size: 1rem; font-weight: bold; color: #fff;">{{i.upper()}}</p>
