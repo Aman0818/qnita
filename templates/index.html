@@ -262,7 +262,7 @@
 			</div>
 		</div>
 		<div class="row" data-aos="zoom-out-down">
-			{%for i in range(4)%}
+			{%for i in [['Aditi Lal','Quantum Computing Educator and Public Speaker','https://www.linkedin.com/in/aditi-lal-sau11/'],['Jay Shah','Quantum Machine Learning Developer @ BosonQ Psi Pvt Ltd','https://www.linkedin.com/in/jay-shah-qml/'],['Vardaan Sahgal','Software Solutions Head @Womanium Quantum','https://www.linkedin.com/in/vardaansahgal/'],['Prasanta k. Panigrahi','Professor at Indian Institute of Science Education and Research, Kolkata','https://www.linkedin.com/in/prasanta-panigrahi-a2276457/']]%}
 			<div class="col-lg-3 col-md-4 col-sm-6">
 				<!-- Speaker 1 -->
 				<div class="speaker-item" style="box-shadow: 0 60px 80px rgba(106, 0, 182, 0.60), 0 45px 26px rgba(106, 0, 182, 0.14);">
@@ -272,13 +272,13 @@
 						<div class="socials">
 							<ul class="list-inline">
 								<li class="list-inline-item"><a href="#"><i class="fa fa-envelope"></i></a></li>
-								<li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+								<li class="list-inline-item"><a href="{{i[2]}}" target='_blank'><i class="fa fa-linkedin"></i></a></li>
 							</ul>
 						</div>
 					</div>
 					<div class="content text-center">
-						<h5><a href="#">SPEAKER NAME</a></h5>
-						<p style="color:black;">Designation</p>
+						<h5><a href="#">{{i[0]}}</a></h5>
+						<p style="color:black;">{{i[1]}}</p>
 					</div>
 				</div>
 			</div>
