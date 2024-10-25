@@ -1454,6 +1454,7 @@ select.form-control:not([size]):not([multiple]) {
   align-items: center;
   transition: .2s ease-in;
   padding-right: 20px;
+  border-bottom: 2px solid #8900bb;
 }
 
 .schedule .schedule-contents .schedule-item li.schedule-details .block div {
@@ -1479,6 +1480,8 @@ select.form-control:not([size]):not([multiple]) {
 .schedule .schedule-contents .schedule-item li.schedule-details .block div span.name {
   margin-left: 20px;
   transition: .2s ease-in;
+  color: #8900bb;
+  
 }
 
 @media (max-width: 480px) {
