@@ -291,83 +291,180 @@
 <!--==============================
 =            Schedule            =
 ===============================-->
-
 <section class="section schedule" id="schedule">
-	<div class="container">
-		<div class="row">
-			<div class="col-12">
-				<div class="section-title">
-					<h3>EVENT <span class="alternate">SCHEDULE</span></h3>
-					<p>Mark your calendars – it’s time to superposition your plans! Gear up for an exciting Qiskit Fall Fest lineup packed with workshops, tutorials, hackathons, and everything quantum. Don’t let this event slip out of your orbit.</p>
-				</div>
-			</div>
-		</div>
-		<div class="row" data-aos="zoom-out-up">
-			<div class="col-12">
-				<div class="schedule-tab">
-					<ul class="nav nav-pills text-center">
-						<li class="nav-item">
-							<a class="nav-link active" href="#nov20" data-toggle="pill">
-								Day-01
-								<span>20 October 2024</span>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#nov21" data-toggle="pill">
-								Day-02
-								<span>21 October 2024</span>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#nov22" data-toggle="pill">
-								Day-03
-								<span>22 October 2024</span>
-							</a>
-						</li>
-					</ul>
-				</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-title">
+                    <h3>EVENT <span class="alternate">SCHEDULE</span></h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusm tempor incididunt ut labore.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row" data-aos="zoom-out-up">
+            <div class="col-12">
+                <div class="schedule-tab">
+                    <ul class="nav nav-pills text-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="nov20-tab" data-toggle="pill" href="#nov20" role="tab">
+                                WEEK-01
+                                <span>27 OCT - 3 NOV</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="nov21-tab" data-toggle="pill" href="#nov21" role="tab">
+                                WEEK-02
+                                <span>4 NOV - 10 NOV</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
 
-				<div class="schedule-contents">
-					<div class="tab-content" id="pills-tabContent">
-						<div class="tab-pane fade show active schedule-item" id="nov20">
-							<!-- Headings -->
-							<ul class="m-0 p-0">
-								<li class="headings">
-									<div class="time">Time</div>
-									<div class="speaker">Speaker</div>
-									<div class="subject">Subject</div>
-									<div class="venue">Venue</div>
-								</li>
-								{% for event in range(8) %}
+                <div class="schedule-contents">
+                    <div class="tab-content" id="pills-tabContent">
+                        <!-- Week 1 Content -->
+                        <div class="tab-pane fade show active schedule-item" id="nov20" role="tabpanel" aria-labelledby="nov20-tab">
+                            <ul class="m-0 p-0">
+                                <li class="headings">
+                                    <div class="time">Date & Time</div>
+                                    <div class="speaker">Speaker</div>
+                                    <div class="subject">Subject</div>
+                                    <div class="venue">Venue</div>
+                                </li>
+                                <li class="schedule-details">
+                                    <div class="block">
+                                        <div class="time">
+                                            <i class="fa fa-calendar"></i> 27 OCTOBER <br>
+                                        
+                                        </div>
+										
+                                        <div class="speaker">
+                                            <img src="/static/images/speakers/AditiLal.jpeg" alt="speaker-thumb-one">
+                                            <span class="name">ADITI LAL</span>
+                                        </div>
+                                        <div class="subject">Inaugural ceremony, Introduction to Quantum Computing, and more...</div>
+                                        <div class="venue">Auditorium</div>
+                                    </div>
+                                </li>
+                                <li class="schedule-details">
+                                    <div class="block">
+                                        <div class="time">
+                                            <i class="fa fa-calendar"></i> 29 OCTOBER <br>
+                                        
+                                        </div>
+                                        <div class="speaker">
+                                            <img src="/static/images/speakers/JayShah.jpeg" alt="speaker-thumb-two">
+                                            <span class="name">JAY SHAH</span>
+                                        </div>
+                                        <div class="subject">Basics of Quantum Computing</div>
+                                        <div class="venue">Online</div>
+                                    </div>
+                                </li>
 								<li class="schedule-details">
-									<div class="block">
-										<!-- Time -->
-										<div class="time">
-											<i class="fa fa-clock-o"></i>
-											<span class="time">9.00 AM</span>
-										</div>
-										<!-- Speaker -->
-										<div class="speaker">
-											<img src="https://via.placeholder.com/50" alt="speaker-thumb-one">
-											<span class="name">Speaker</span>
-										</div>
-										<!-- Subject -->
-										<div class="subject">Dummy Subject</div>
-										<!-- Venue -->
-										<div class="venue">Auditorium</div>
-									</div>
-								</li>
-								{% endfor %}
-							</ul>
-						</div>
-						
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
+                                    <div class="block">
+                                        <div class="time">
+                                            <i class="fa fa-calendar"></i> 02 NOVEMBER <br>
+                                        
+                                        </div>
+                                        <div class="speaker">
+                                            <img src="/static/images/speakers/AditiLal.jpeg" alt="speaker-thumb-one">
+                                            <span class="name">ADITI LAL</span>
+                                        </div>
+                                        <div class="subject">Application Of Quantum Computing</div>
+                                        <div class="venue">Online</div>
+                                    </div>
+                                </li>
+								<li class="schedule-details">
+                                    <div class="block">
+                                        <div class="time">
+                                            <i class="fa fa-calendar"></i> 03 NOVEMBER <br>
+                                        
+                                        </div>
+                                        <div class="speaker">
+                                            <img src="/static/images/speakers/JayShah.jpeg" alt="speaker-thumb-two">
+                                            <span class="name">JAY SHAH</span>
+                                        </div>
+                                        <div class="subject">Mathematics & Physics invloved</div>
+                                        <div class="venue">Online</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
 
+                        <!-- Week 2 Content -->
+                        <div class="tab-pane fade schedule-item" id="nov21" role="tabpanel" aria-labelledby="nov21-tab">
+                            <ul class="m-0 p-0">
+                                <li class="headings">
+                                    <div class="time">Date & Time</div>
+                                    <div class="speaker">Speaker</div>
+                                    <div class="subject">Subject</div>
+                                    <div class="venue">Venue</div>
+                                </li>
+                                <li class="schedule-details">
+                                    <div class="block">
+                                        <div class="time">
+                                            <i class="fa fa-calendar"></i> 5 NOVEMBER <br>
+                                        
+                                        </div>
+                                        <div class="speaker">
+                                            <img src="/static/images/speakers/AditiLal.jpeg" alt="speaker-thumb-three">
+                                            <span class="name">ADITI LAL</span>
+                                        </div>
+                                        <div class="subject">Hands-on Gates</div>
+                                        <div class="venue">Online</div>
+                                    </div>
+                                </li>
+								<li class="schedule-details">
+                                    <div class="block">
+                                        <div class="time">
+                                            <i class="fa fa-calendar"></i> 07 NOVEMBER <br>
+                                        
+                                        </div>
+                                        <div class="speaker">
+                                            <img src="/static/images/speakers/JayShah.jpeg" alt="speaker-thumb-two">
+                                            <span class="name">JAY SHAH</span>
+                                        </div>
+                                        <div class="subject">Various ML algorithms</div>
+                                        <div class="venue">Online</div>
+                                    </div>
+                                </li>
+                                <li class="schedule-details">
+                                    <div class="block">
+                                        <div class="time">
+                                            <i class="fa fa-calendar"></i> 10 NOVEMBER <br>
+                                            
+                                        </div>
+                                        <div class="speaker">
+                                            <img src="/static/images/speakers/PrasantaKPanigrahi.jpeg" alt="speaker-thumb-four">
+                                            <span class="name">PRASANTA PANIGRAHI</span>
+                                        </div>
+                                        <div class="subject">Jamming, Info about Hackathon & future opportunities</div>
+                                        <div class="venue">Auditorium</div>
+                                    </div>
+                                </li>
+								<li class="schedule-details">
+                                    <div class="block">
+                                        <div class="time">
+                                            <i class="fa fa-calendar"></i> 10 NOVEMBER <br>
+                                            
+                                        </div>
+                                        <div class="speaker">
+                                            <img src="/static/images/speakers/VardanSahgal.jpeg" alt="speaker-thumb-four">
+                                            <span class="name">VARDAN SAHGAL</span>
+                                        </div>
+                                        <div class="subject">Jamming, Info about Hackathon & future opportunities</div>
+                                        <div class="venue">Auditorium</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <!--====  End of Schedule  ====-->
 
 <!--==============================
