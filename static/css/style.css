@@ -1268,8 +1268,8 @@ select.form-control:not([size]):not([multiple]) {
   font-size: 16px;
   font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
-  color: #222222;
-  font-weight: 500;
+  color: rgba(106, 0, 182, 0.93);
+  font-weight: 700;
   margin-bottom: 0;
 }
 
