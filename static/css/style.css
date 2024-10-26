@@ -11,9 +11,9 @@ body {
   background-color: #000000;
   color: white !important;
 }
-
+/* Modal background */
 #modal-background {
-    display: none; 
+    display: none; /* Hide initially */
     position: fixed;
     top: 0;
     left: 0;
@@ -2146,7 +2146,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .news .blog-post .post-content .post-title h2 a {
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 100;
   color: #f8f8f8;
   font-family: 'Poppins', sans-serif; 
