@@ -248,45 +248,58 @@
 <!--==============================
 =            Speakers            =
 ===============================-->
-
 <section class="section speakers" id="speakers">
-	<div class="container">
-		<div class="row">
-			<div class="col-12">
-				<!-- Section Title -->
-				<div class="section-title black">
-					<h3>OUR <span class="alternate">SPEAKERS</span></h3>
-					<p>Unveiling the minds shaping the quantum frontier—meet the esteemed speakers of Qiskit Fall Fest, guiding us into the future of quantum innovation. 
-					</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <!-- Section Title -->
+                <div class="section-title black" style="text-align: center; margin-bottom: 30px;">
+                    <h3 style="color: #ffffff; font-size: 2.5em;">
+                        OUR <span style="background: linear-gradient(45deg, #6a00b6, #ff4081); -webkit-background-clip: text; color: transparent;">SPEAKERS</span>
+                    </h3>
+                    <p style="color: #cccccc; font-size: 1.1em;">
+                        Unveiling the minds shaping the quantum frontier—meet the esteemed speakers of Qiskit Fall Fest, guiding us into the future of quantum innovation.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 20px;">
+			{% for speaker in [
+				{'name': 'Aditi Lal', 'title': 'Quantum Computing Educator & Public Speaker', 'linkedin': 'https://www.linkedin.com/in/aditi-lal-sau11/'},
+				{'name': 'Jay Shah', 'title': 'Quantum ML Developer @ BosonQ Psi Pvt Ltd', 'linkedin': 'https://www.linkedin.com/in/jay-shah-qml/'},
+				{'name': 'Vardaan Sahgal', 'title': 'Software Solutions Head @Womanium Quantum', 'linkedin': 'https://www.linkedin.com/in/vardaansahgal/'},
+				{'name': 'Prasanta K. Panigrahi', 'title': 'Professor at IISER Kolkata', 'linkedin': 'https://www.linkedin.com/in/prasanta-panigrahi-a2276457/'}
+			] %}
+			<div style="background: #1a1a1a; border-radius: 15px; border: 2px solid; border-image-slice: 1; border-image-source: linear-gradient(135deg, #6a00b6, #ff4081); box-shadow: rgba(106, 0, 182, 0.8) 0px 10px 40px; display: flex; flex-direction: column; justify-content: space-between; height: 350px; width: calc(25% - 20px); min-width: 250px; padding: 20px; text-align: center; position: relative; cursor: pointer; overflow: hidden;">
+				
+				<!-- Profile Image -->
+				<div style="width: 120px; height: 120px; margin: 0 auto; overflow: hidden; border-radius: 50%; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);">
+					<img src="/static/images/speakers/{{ speaker.name.replace(' ', '') }}.jpg" alt="{{ speaker.name }}" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+				</div>
+		
+				<!-- Name and Title -->
+				<div style="margin-top: 15px; flex-grow: 1;">
+					<h5 style="color: #ffffff; font-size: 1rem; font-weight: bold; margin: 10px 0;">{{ speaker.name }}</h5>
+					<p style="color: #bbbbbb; font-size: 0.8rem; margin: 0 15px;">{{ speaker.title }}</p>
+				</div>
+				
+				<!-- Horizontal Rule -->
+				<hr style="border-color: #555; margin: 15px 0;">
+		
+				<!-- Social Links -->
+				<div style="display: flex; justify-content: center; margin-bottom: 15px;">
+					<a href="{{ speaker.linkedin }}" target="_blank" style="width: 35px; height: 35px; background: linear-gradient(135deg, #6a00b6, #ff4081); display: flex; align-items: center; justify-content: center; border-radius: 50%; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); transition: background 0.3s;">
+						<i class="fa fa-linkedin" style="color: white; font-size: 1.2rem;"></i>
+					</a>
 				</div>
 			</div>
+			{% endfor %}
 		</div>
-		<div class="row" data-aos="zoom-out-down">
-			{%for i in [['Aditi Lal','Quantum Computing Educator and Public Speaker','https://www.linkedin.com/in/aditi-lal-sau11/'],['Jay Shah','Quantum Machine Learning Developer @ BosonQ Psi Pvt Ltd','https://www.linkedin.com/in/jay-shah-qml/'],['Vardaan Sahgal','Software Solutions Head @Womanium Quantum','https://www.linkedin.com/in/vardaansahgal/'],['Prasanta k. Panigrahi','Professor at Indian Institute of Science Education and Research, Kolkata','https://www.linkedin.com/in/prasanta-panigrahi-a2276457/']]%}
-			<div class="col-lg-3 col-md-4 col-sm-6">
-				<!-- Speaker 1 -->
-				<div class="speaker-item" style="box-shadow: 0 60px 80px rgba(106, 0, 182, 0.60), 0 45px 26px rgba(106, 0, 182, 0.14);">
-					<div class="image">
-						<img src="/static/images/speakers/{{i[0].replace(" ","")}}.jpeg" alt="speaker" class="img-fluid">
-						<div class="primary-overlay"></div>
-						<div class="socials">
-							<ul class="list-inline">
-								<li class="list-inline-item"><a href="#"><i class="fa fa-envelope"></i></a></li>
-								<li class="list-inline-item"><a href="{{i[2]}}" target='_blank'><i class="fa fa-linkedin"></i></a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="content text-center">
-						<h5 style="color:#800080 !important; font-weight: 700 !important;"><a href="#">{{i[0]}}</a></h5>
-						<p style="color:black;">{{i[1]}}</p>
-					</div>
-				</div>
-			</div>
-			{%endfor%}
-		</div>
-	</div>
+		
+		
+		
+    </div>
 </section>
-
 <!--====  End of Speakers  ====-->
 <!--==============================
 =            Schedule            =
