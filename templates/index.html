@@ -977,6 +977,32 @@
 				document.getElementById('modal-background').style.display = 'none';
 			}
 		};
+	  document.addEventListener("DOMContentLoaded", function() {
+
+	  const week1Tab = document.getElementById("nov20-tab");
+	  const week2Tab = document.getElementById("nov21-tab");
+	  const week1Content = document.getElementById("nov20");
+	  const week2Content = document.getElementById("nov21");
+ 
+	  function activateTab(selectedTab, selectedContent, otherTab, otherContent) {
+		selectedTab.classList.add("active");
+		selectedContent.classList.add("show", "active");
+		otherTab.classList.remove("active");
+		otherContent.classList.remove("show", "active");
+	  }
+  
+	  activateTab(week1Tab, week1Content, week2Tab, week2Content);
+  
+	  week1Tab.addEventListener("click", function(event) {
+		event.preventDefault();
+		activateTab(week1Tab, week1Content, week2Tab, week2Content);
+	  });
+  
+	  week2Tab.addEventListener("click", function(event) {
+		event.preventDefault();
+		activateTab(week2Tab, week2Content, week1Tab, week1Content);
+	  });
+	});
   </script>
    <!-- lma -->
   <script id="luma-checkout" src="https://embed.lu.ma/checkout-button.js"></script>
