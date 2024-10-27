@@ -29,7 +29,14 @@
 
 </head>
 <body class="body-wrapper">
-	
+<div id="loader">
+    <div class="nucleus">
+        <div class="main-particle"></div>
+        <div class="trailing-particle"></div>
+    </div>
+    <div class="loader-text">Quantum Loading...</div>
+</div>
+
 <nav style="background-color: rgba(0, 0, 0, 0.8); box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); padding: 10px 0;" class="navbar fixed-top navbar-expand-lg">
   <div class="container-fluid">
 
@@ -923,6 +930,9 @@
 		});
   </script>
   <script>
+	  window.addEventListener('load', function() {
+			document.getElementById('loader').style.display = 'none';
+		});
 		const phrases = ["Quantum Computing Event", "Event Hosted By NIT Agartala", "Quantum Event", "Hackathon & much more..."];
 		let i = 0;
 		let j = 0;
