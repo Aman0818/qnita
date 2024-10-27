@@ -11,9 +11,8 @@ body {
   background-color: #000000;
   color: white !important;
 }
-/* Modal background */
 #modal-background {
-    display: none; /* Hide initially */
+    display: none; 
     position: fixed;
     top: 0;
     left: 0;
