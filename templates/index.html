@@ -90,17 +90,6 @@
     </div>
   </div>
 </nav>
-<div id="modal-background">
-    <div id="modal-container">
-        <span id="close-modal">&times;</span>
-        <p style='text-align:justify; color:black;'>👋 We noticed you haven’t registered yet!</p>
-        <a href="https://lu.ma/event/evt-47iwsontHsnGnDv" data-luma-action="checkout" data-luma-event-id="evt-47iwsontHsnGnDv" style="color: white; text-decoration: none;">
-			<div style="padding: 10px 20px; background: linear-gradient(90deg, rgba(106, 0, 182, 0.93), black); border-radius: 50px; color: white; text-align: center; transition: all 0.3s;">
-			  REGISTER FOR EVENT
-			</div>
-		  </a>
-    </div>
-</div>
 <!--====  End of Navigation Section  ====-->
 {% block content %}
 <!--============================
@@ -969,24 +958,7 @@
 	
 		loop();
 	
-		function showModal() {
-			document.getElementById('modal-background').style.display = 'block';
-		}
-	
-		window.onload = function() {
-			setTimeout(showModal, 1000);
-		};
-	
-	
-		document.getElementById('close-modal').onclick = function() {
-			document.getElementById('modal-background').style.display = 'none';
-		};
-	
-		window.onclick = function(event) {
-			if (event.target === document.getElementById('modal-background')) {
-				document.getElementById('modal-background').style.display = 'none';
-			}
-		};
+		
 	  document.addEventListener("DOMContentLoaded", function() {
 
 	  const week1Tab = document.getElementById("nov20-tab");
