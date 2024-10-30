@@ -29,13 +29,17 @@
 
 </head>
 <body class="body-wrapper">
+<!-- Loader HTML -->
+<!-- Quantum Loader -->
 <div id="loader">
     <div class="nucleus">
         <div class="main-particle"></div>
         <div class="trailing-particle"></div>
     </div>
-    <div class="loader-text">Quantum Loading...</div>
+    <div class="loader-text">Lets Chant Hare Krishna 🦚</div>
 </div>
+
+
 
 <nav style="background-color: rgba(0, 0, 0, 0.8); box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); padding: 10px 0;" class="navbar fixed-top navbar-expand-lg">
   <div class="container-fluid">
@@ -90,16 +94,16 @@
     </div>
   </div>
 </nav>
+
 <!--====  End of Navigation Section  ====-->
 {% block content %}
 <!--============================
 =            Banner            =
 =============================-->
-<section class="banner bg-banner-one">
-	<div id="particles-js" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 1;"></div>
+<section class="banner bg-banner-one" style="position: relative;">
+	<div id="particles-js" style=" width: 100%; height: 100%; top: 0; left: 0; z-index: 3; pointer-events: auto;"></div>
 	
-	
-	<div class="container" style="position: relative; z-index: 3;">
+	<div class="container" style="position: relative; z-index: 2; display:flex;  justify-content: center;">
 	  <div class="row">
 		<div class="col-lg-12">
 		  <!-- Content Block -->
@@ -108,28 +112,28 @@
 			  <span style="color: rgba(106, 0, 182, 0.93);">Q</span>NITA '24
 			</h1>
 			<h2 style="font-family: 'Poppins', sans-serif; font-size: 2rem; font-style: normal; font-weight: 400; color: white; text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6); letter-spacing: 1px;background: linear-gradient(45deg, #6a00b6, #ff4081); -webkit-background-clip: text; color: transparent;">
-			  IBM Qiskit Fall Fest at NIT Agartala Hosted with IEEE
+			  Hosted by IBM and Qiskit
 			</h2>
 			<h6 style="font-family: 'Poppins', sans-serif; font-size: 1.2rem; font-weight: 300; color: white; text-transform: uppercase; text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); letter-spacing: 2px;">
 			  <span id="dynamic-text"></span>
 			</h6>
-			<!-- Action Button -->
-			<a href="https://lu.ma/event/evt-47iwsontHsnGnDv" data-luma-action="checkout" data-luma-event-id="evt-47iwsontHsnGnDv" class="btn btn-gradient" style="padding: 10px 20px; background: linear-gradient(120deg, rgba(106, 0, 182, 0.93), black); border-radius: 50px; color: white; text-align: center; transition: all 0.3s; text-transform: uppercase; letter-spacing: 2px; z-index: 4; position: relative;">
-				REGISTER NOW
-			</a>
 		  </div>
 		</div>
 	  </div>
 	</div>
+  
+	<!-- Action Button -->
+	<a href="https://lu.ma/event/evt-47iwsontHsnGnDv" data-luma-action="checkout" data-luma-event-id="evt-47iwsontHsnGnDv" class="btn btn-gradient" style="padding: 10px 20px; background: linear-gradient(120deg, rgba(106, 0, 182, 0.93), black); border-radius: 50px; color: white; text-align: center; transition: all 0.3s; text-transform: uppercase; letter-spacing: 2px; z-index: 4; position: relative; margin-top: -3rem;">
+		REGISTER NOW
+	</a>
 </section>
 
-  
-  
+
 <!--====  End of Banner  ====-->
 <section class="registration" style="padding-left: 80px; padding-right: 80px; padding-top: 120px; padding-bottom: 100px;">
     <div class="container-fluid" style="padding: 50px 0;">
         <div class="row justify-content-center">
-            {% for label, value in {'Speakers': '4+', 'Seats': '500+',  'Days Event': '14'}.items() %}
+            {% for label, value in {'Speakers': '10+', 'Seats': '500+', 'Participants': '1000+', 'Days Event': '14'}.items() %}
             <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
                 <div class="stat-item text-center" style="background-color: #000000; color: #fff; padding: 40px 20px; border-radius: 15px; position: relative; overflow: hidden; transition: all 0.3s ease; box-shadow: rgba(142, 0, 199, 0.734) 0px 7px 29px 0px;">
                     <div style="position: absolute; top: 0; left: 0; height: 100%; width: 5px; background: linear-gradient(180deg, rgba(142, 0, 199, 1) 0%, rgba(255, 0, 85, 1) 100%);"></div>
@@ -141,7 +145,6 @@
         </div>
     </div>
 </section>
-
 
 <!--====  End of Registration  ====-->
 <!--==== About  ====-->
@@ -199,7 +202,7 @@
 			<div class="col-12">
 				<div class="section-title">
 					<h3>HOSTED <span class="alternate">BY</span></h3>
-					<p>Hosted by NIT Agartala, with support from IBM and Qiskit, this Fall Fest sets the stage for a quantum revolution with IBM’s pioneering technology and Qiskit’s powerful open-source framework. Gear up to execute quantum algorithms and amplify your knowledge— the future of computing is just a few lines of code away!</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusm tempor incididunt ut labore dolore</p>
 				</div>
 			</div>
 		</div>
@@ -214,28 +217,21 @@
 						<li class="list-inline-item">
 							<div class="image-block text-center" style="border">
 								<a href="#">
-									<img src="/static/images/sponsors/ibm.png" alt="sponsors-logo" class="img-fluid" loading="lazy>
+									<img src="/static/images/sponsors/ibm.png" alt="sponsors-logo" class="img-fluid">
 								</a>
 							</div>
 						</li>
 						<li class="list-inline-item">
 							<div class="image-block text-center">
 								<a href="#">
-									<img src="/static/images/sponsors/nita.png" alt="sponsors-logo" class="img-fluid" loading="lazy>
+									<img src="/static/images/sponsors/nita.png" alt="sponsors-logo" class="img-fluid">
 								</a>
 							</div>
 						</li>
 						<li class="list-inline-item">
 							<div class="image-block text-center">
 								<a href="#">
-									<img src="/static/images/sponsors/qiskit.png" alt="sponsors-logo" class="img-fluid" loading="lazy>
-								</a>
-							</div>
-						</li>
-						<li class="list-inline-item">
-							<div class="image-block text-center">
-								<a href="#">
-									<img src="/static/images/sponsors/IEEE.jpg" alt="sponsors-logo" class="img-fluid" loading="lazy>
+									<img src="/static/images/sponsors/qiskit.png" alt="sponsors-logo" class="img-fluid">
 								</a>
 							</div>
 						</li>
@@ -251,6 +247,7 @@
 <!--==============================
 =            Speakers            =
 ===============================-->
+
 <section class="section speakers" id="speakers">
     <div class="container">
         <div class="row">
@@ -271,18 +268,18 @@
 				{'name': 'Aditi Lal', 'title': 'Quantum Computing Educator & Public Speaker', 'linkedin': 'https://www.linkedin.com/in/aditi-lal-sau11/'},
 				{'name': 'Jay Shah', 'title': 'Quantum ML Developer @ BosonQ Psi Pvt Ltd', 'linkedin': 'https://www.linkedin.com/in/jay-shah-qml/'},
 				{'name': 'Vardaan Sahgal', 'title': 'Software Solutions Head @Womanium Quantum', 'linkedin': 'https://www.linkedin.com/in/vardaansahgal/'},
-				{'name': 'Prasanta k. Panigrahi', 'title': 'Professor at IISER Kolkata', 'linkedin': 'https://www.linkedin.com/in/prasanta-panigrahi-a2276457/'}
+				{'name': 'Prasanta K. Panigrahi', 'title': 'Professor at IISER Kolkata', 'linkedin': 'https://www.linkedin.com/in/prasanta-panigrahi-a2276457/'}
 			] %}
 			<div style="background: #1a1a1a; border-radius: 15px; border: 2px solid; border-image-slice: 1; border-image-source: linear-gradient(135deg, #6a00b6, #ff4081); box-shadow: rgba(106, 0, 182, 0.8) 0px 10px 40px; display: flex; flex-direction: column; justify-content: space-between; height: 350px; width: calc(25% - 20px); min-width: 250px; padding: 20px; text-align: center; position: relative; cursor: pointer; overflow: hidden;">
 				
 				<!-- Profile Image -->
 				<div style="width: 120px; height: 120px; margin: 0 auto; overflow: hidden; border-radius: 50%; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);">
-					<img src="/static/images/speakers/{{ speaker.name.replace(' ', '') }}.jpeg" alt="{{ speaker.name }}" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;" loading="lazy>
+					<img src="/static/images/speakers/{{ speaker.name.replace(' ', '') }}.jpg" alt="{{ speaker.name }}" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
 				</div>
 		
 				<!-- Name and Title -->
 				<div style="margin-top: 15px; flex-grow: 1;">
-					<h5 style="color: #ffffff; font-size: 1rem; font-weight: bold; margin: 10px 0;">{{ speaker.name.upper() }}</h5>
+					<h5 style="color: #ffffff; font-size: 1rem; font-weight: bold; margin: 10px 0;">{{ speaker.name }}</h5>
 					<p style="color: #bbbbbb; font-size: 0.8rem; margin: 0 15px;">{{ speaker.title }}</p>
 				</div>
 				
@@ -303,20 +300,34 @@
 		
     </div>
 </section>
+
+
+
 <!--====  End of Speakers  ====-->
 <!--==============================
 =            Schedule            =
 ===============================-->
+
 <section class="section schedule" id="schedule">
     <div class="container">
         <div class="row">
             <div class="col-12">
                 <div class="section-title">
                     <h3>EVENT <span class="alternate">SCHEDULE</span></h3>
-                    <p>Mark your calendars - it's time to superposition your plans! Gear up for an exciting Qiskit Fall Fest lineup packed with workshops, tutorials, hackathons, and everything quantum. Don't let this event slip out of your orbit.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusm tempor incididunt ut labore.</p>
+                    
+                    <!-- Download Button -->
+					<div><a href="URL_TO_YOUR_PDF.pdf" target="_blank" download
+						style="background: linear-gradient(180deg, black, rgba(106, 0, 182, 0.93)); margin-top:10px; color: #ffffff; padding: 8px 16px; font-size: 0.9rem; border: none; border-radius: 5px; text-decoration: none; transition: background-color 0.3s ease;"
+						onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">
+						Download Schedule PDF
+						</a></div>
+
+
                 </div>
             </div>
         </div>
+        <!-- Schedule Content -->
         <div class="row" data-aos="zoom-out-up">
             <div class="col-12">
                 <div class="schedule-tab">
@@ -350,60 +361,17 @@
                                 <li class="schedule-details">
                                     <div class="block">
                                         <div class="time">
-                                            <i class="fa fa-calendar"></i> 27 OCT <br>
-                                        
+                                            <i class="fa fa-calendar"></i> 27 OCTOBER <br>
                                         </div>
-										
                                         <div class="speaker">
                                             <img src="/static/images/speakers/AditiLal.jpeg" alt="speaker-thumb-one">
                                             <span class="name">ADITI LAL</span>
                                         </div>
                                         <div class="subject">Inaugural ceremony, Introduction to Quantum Computing, and more...</div>
-                                        <div class="venue">Online</div>
+                                        <div class="venue">Auditorium</div>
                                     </div>
                                 </li>
-                                <li class="schedule-details">
-                                    <div class="block">
-                                        <div class="time">
-                                            <i class="fa fa-calendar"></i> 29 OCT <br>
-                                        
-                                        </div>
-                                        <div class="speaker">
-                                            <img src="/static/images/speakers/JayShah.jpeg" alt="speaker-thumb-two">
-                                            <span class="name">JAY SHAH</span>
-                                        </div>
-                                        <div class="subject">Basics of Quantum Computing</div>
-                                        <div class="venue">Online</div>
-                                    </div>
-                                </li>
-								<li class="schedule-details">
-                                    <div class="block">
-                                        <div class="time">
-                                            <i class="fa fa-calendar"></i> 02 NOV <br>
-                                        
-                                        </div>
-                                        <div class="speaker">
-                                            <img src="/static/images/speakers/AditiLal.jpeg" alt="speaker-thumb-one">
-                                            <span class="name">ADITI LAL</span>
-                                        </div>
-                                        <div class="subject">Application Of Quantum Computing</div>
-                                        <div class="venue">Online</div>
-                                    </div>
-                                </li>
-								<li class="schedule-details">
-                                    <div class="block">
-                                        <div class="time">
-                                            <i class="fa fa-calendar"></i> 03 NOV<br>
-                                        
-                                        </div>
-                                        <div class="speaker">
-                                            <img src="/static/images/speakers/JayShah.jpeg" alt="speaker-thumb-two">
-                                            <span class="name">JAY SHAH</span>
-                                        </div>
-                                        <div class="subject">Mathematics & Physics invloved</div>
-                                        <div class="venue">Online</div>
-                                    </div>
-                                </li>
+                                <!-- Additional content here for week 1 -->
                             </ul>
                         </div>
 
@@ -419,8 +387,7 @@
                                 <li class="schedule-details">
                                     <div class="block">
                                         <div class="time">
-                                            <i class="fa fa-calendar"></i> 5 NOV <br>
-                                        
+                                            <i class="fa fa-calendar"></i> 5 NOVEMBER <br>
                                         </div>
                                         <div class="speaker">
                                             <img src="/static/images/speakers/AditiLal.jpeg" alt="speaker-thumb-three">
@@ -430,48 +397,7 @@
                                         <div class="venue">Online</div>
                                     </div>
                                 </li>
-								<li class="schedule-details">
-                                    <div class="block">
-                                        <div class="time">
-                                            <i class="fa fa-calendar"></i> 07 NOV <br>
-                                        
-                                        </div>
-                                        <div class="speaker">
-                                            <img src="/static/images/speakers/JayShah.jpeg" alt="speaker-thumb-two">
-                                            <span class="name">JAY SHAH</span>
-                                        </div>
-                                        <div class="subject">Various ML algorithms</div>
-                                        <div class="venue">Online</div>
-                                    </div>
-                                </li>
-                                <li class="schedule-details">
-                                    <div class="block">
-                                        <div class="time">
-                                            <i class="fa fa-calendar"></i> 10 NOV <br>
-                                            
-                                        </div>
-                                        <div class="speaker">
-                                            <img src="/static/images/speakers/Prasantak.Panigrahi.jpeg" alt="speaker-thumb-four">
-                                            <span class="name">PRASANTA k. PANIGRAHI</span>
-                                        </div>
-                                        <div class="subject">Jamming, Info about Hackathon & future opportunities</div>
-                                        <div class="venue">Auditorium</div>
-                                    </div>
-                                </li>
-								<li class="schedule-details">
-                                    <div class="block">
-                                        <div class="time">
-                                            <i class="fa fa-calendar"></i> 10 NOV <br>
-                                            
-                                        </div>
-                                        <div class="speaker">
-                                            <img src="/static/images/speakers/VardaanSahgal.jpeg" alt="speaker-thumb-four">
-                                            <span class="name">VARDAAN SAHGAL</span>
-                                        </div>
-                                        <div class="subject">Jamming, Info about Hackathon & future opportunities</div>
-                                        <div class="venue">Auditorium</div>
-                                    </div>
-                                </li>
+                                <!-- Additional content here for week 2 -->
                             </ul>
                         </div>
                         
@@ -481,6 +407,9 @@
         </div>
     </div>
 </section>
+
+
+
 <!--====  End of Schedule  ====-->
 
 <!--==============================
@@ -493,7 +422,7 @@
 			<div class="col-12">
 				<div class="section-title">
 					<h3>OUR <span class="alternate">SPONSORS</span></h3>
-					<p>Our event is made possible thanks to the generous support of our sponsors, whose contributions help us drive innovation and knowledge-sharing in the quantum space.</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusm tempor incididunt ut labore dolore</p>
 				</div>
 			</div>
 		</div>
@@ -508,7 +437,7 @@
 						<li class="list-inline-item">
 							<div class="image-block text-center">
 								<a href="https://www.m3nt.com/" target='_blank'>
-									<img src="/static/images/sponsors/sponsor.png" alt="sponsors-logo" class="img-fluid" loading="lazy>
+									<img src="/static/images/sponsor.png" alt="sponsors-logo" class="img-fluid">
 								</a>
 							</div>
 						</li>
@@ -632,6 +561,8 @@
         </div>
     </div>
 </section>
+
+
 <!--====  End of blogs  ====-->
 <!--==============================
 =            members            =
@@ -652,8 +583,8 @@
 				<div style="background:#000000; border-radius: 15px; overflow: hidden; box-shadow: rgba(106, 0, 182, 0.93) 0px 10px 150px 0px; transition: all 0.4s ease-in-out; cursor: pointer; width: calc(25% - 20px); min-width: 200px; position: relative;">
 
 					<div style="padding: 30px 20px; text-align: center;">
-						<div style="position: relative; width: 110px; height: 110px; border-radius: 50%; margin: 0 auto; overflow: hidden; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); transition: transform 0.4s ease;">
-							<img src="/static/images/{{i.replace(" ","")}}.jpeg" alt="{{ i }}" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;" loading="lazy>
+						<div style="position: relative; width: 150px; height: 150px; border-radius: 50%; margin: 0 auto; overflow: hidden; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); transition: transform 0.4s ease;">
+							<img src="/static/images/members/{{i.replace(" ","")}}.jpeg" alt="{{ i }}" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
 						</div>
 						<div style="margin-top: 20px;">
 							<p style="font-size: 1rem; font-weight: bold; color: #fff;">{{ i.upper() }}</p>
@@ -682,11 +613,16 @@
         <!-- Developers -->
         <div style="margin-bottom: 40px;">
             <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 20px;">
-				{% for i, j in {'Aman Mishra':'Devloper','Pratyush Baliarsingh':'Marketing','Vidhi Mittal':'Content','Kattamuri Sri Gayatri':'Content | PR','Soham Dey':'Public Relations', 'Sreejit Das':'Public Relations','Katta Keerthi Priya':'Public Relations','Srishant Kumar':'Graphics','Amit Kumar Meena':'Event Lead '}.items() %}
+				{% for i, j in {'Aman Mishra':'Devloper','Soham Dey':'Public Relations', 'Sreejit Das':'Public Relations','Katta Keerthi Priya':'Public Relations','Vidhi Mittal':'Content','Kattamuri Sri Gayatri':'Content','Pratyush Baliarsingh':'Marketing','Srishant Kumar':'Graphics','Parmesh Lata':'Graphics','Avinash':'Multimedia ','Jyotshika':'Multimedia '}.items() %}
                 <div style="background:#000000; border-radius: 15px; overflow: hidden; box-shadow: rgba(106, 0, 182, 0.93) 0px 10px 150px 0px; transition: all 0.4s ease-in-out; cursor: pointer; width: calc(25% - 20px); min-width: 200px; position: relative;">
+					{% if i in ['Aman Mishra','Soham Dey','Vidhi Mittal','Pratyush Baliarsingh','Srishant Kumar'] %}
+						<div style="position: absolute; top: +20px; right: -40px; background-color: #272727; color: #fff; padding: 10px 60px; font-size: 0.9rem; font-weight: bold; text-align: center; transform: rotate(45deg); box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);">
+							Lead
+						</div>
+					{% endif %}
 					<div style="padding: 30px 20px; text-align: center;">
-						<div style="position: relative; width: 110px; height: 110px; border-radius: 50%; margin: 0 auto; overflow: hidden; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); transition: transform 0.4s ease;">
-							<img src="/static/images/{{i.replace(" ","")}}.jpeg" alt="Aman Mishra" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;" loading="lazy>
+						<div style="position: relative; width: 150px; height: 150px; border-radius: 50%; margin: 0 auto; overflow: hidden; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); transition: transform 0.4s ease;">
+							<img src="/static/images/members/{{i.replace(" ","")}}.jpeg" alt="Aman Mishra" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
 						</div>
 						<div style="margin-top: 20px;">
 							<p style="font-size: 1rem; font-weight: bold; color: #fff;">{{i.upper()}}</p>
@@ -737,7 +673,7 @@
 							<div class="card-header" id="headingOne">
 								<h5 class="mb-0">
 									<a data-toggle="collapse" href="#collapseOne">
-										<span class="fa fa-plus-circle"></span> Any prior knowledge is required for attendees?
+										<span class="fa fa-plus-circle"></span> What level of quantum computing knowledge is required for attendees?
 									</a>
 								</h5>
 							</div>
@@ -803,13 +739,13 @@
 							<div class="card-header" id="headingFive">
 								<h5 class="mb-0">
 									<a data-toggle="collapse" href="#collapseFive">
-										<span class="fa fa-plus-circle"></span>Criteria for Achievement certificate?
+										<span class="fa fa-plus-circle"></span> Will there be Q&A sessions?
 									</a>
 								</h5>
 							</div>
 							<div id="collapseFive" class="collapse" data-parent="#accordionTwo">
 								<div class="card-body">
-									Participate in the hackathon and secure top 3 positions in any of the 4 categories
+									Yes! Offline attendees can directly engage with the speakers, while online participants are encouraged to drop their questions in the chat.
 								</div>
 							</div>
 						</div>
@@ -848,7 +784,7 @@
 							<div class="card-header" id="headingEight">
 								<h5 class="mb-0">
 									<a data-toggle="collapse" href="#collapseEight">
-										<span class="fa fa-plus-circle"></span> How is internet connectivity at the venue?
+										<span class="fa fa-plus-circle"></span> What about internet connectivity at the event venue?
 									</a>
 								</h5>
 							</div>
@@ -881,8 +817,8 @@
                 <ul style="list-style: none; padding: 0; ">
                     <li><p style="margin: 0;">Address: National Institute of Technology Agartala
 						Jirania , West Tripura <br>Pin - 799046</p></li>
-                    <li><a href="#" style=" text-decoration: none;">Phone: +91 70054 15535</a></li>
-                    <li><a href="mailto:qnita.explore@gmail.com" style=" text-decoration: none;">Email: qnita.explore@gmail.com</a></li>
+                    <li><a href="#" style=" text-decoration: none;">Phone: +8880 44338899</a></li>
+                    <li><a href="mailto:info@yourdomain.com" style=" text-decoration: none;">Email: info@yqnita.com</a></li>
                 </ul>
             </div>
         </div>
@@ -899,7 +835,7 @@
                 <!-- Social Media Links -->
                 <div style="flex: 1; text-align: right;">
 					<a href="#" style="color: #fff; font-size: 1.5rem; margin: 0 10px;" title="Youtube"><i class="fa fa-youtube"></i></a>
-                    <a href="https://www.instagram.com/qnita.explore/" style="color: #fff; font-size: 1.5rem; margin: 0 10px;" title="Instagram"><i class="fa fa-instagram"></i></a>
+                    <a href="#" style="color: #fff; font-size: 1.5rem; margin: 0 10px;" title="Instagram"><i class="fa fa-instagram"></i></a>
                     <a href="#" style="color: #fff; font-size: 1.5rem; margin: 0 10px;" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
                 </div>
             </div>
@@ -907,7 +843,7 @@
     </div>
 </footer>
 
- <!-- JAVASCRIPTS -->
+  <!-- JAVASCRIPTS -->
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="/static/js/particles.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -916,18 +852,78 @@
 			offset:200,
 		});
   </script>
-  <script src="/static/js/custom2.js" ></script>
+  <script>
+	
+		window.addEventListener('load', function() {
+			document.getElementById('loader').style.display = 'none';
+		});
+
+		const phrases = ["Quantum Computing Event", "Event Hosted By NIT Agartala", "Quantum Event", "Hackathon & much more..."];
+		let i = 0;
+		let j = 0;
+		let currentPhrase = [];
+		let isDeleting = false;
+	
+		function loop() {
+		const targetElement = document.getElementById('dynamic-text');
+	
+		targetElement.innerHTML = currentPhrase.join('');
+	
+		if (!isDeleting && j < phrases[i].length) {
+			currentPhrase.push(phrases[i][j]);
+			j++;
+		} else if (isDeleting && j > 0) {
+			currentPhrase.pop();
+			j--;
+		} else if (!isDeleting && j === phrases[i].length) {
+			isDeleting = true;
+			setTimeout(loop, 1000); 
+			return;
+		} else if (isDeleting && j === 0) {
+			isDeleting = false;
+			i++;
+			if (i === phrases.length) {
+			i = 0;
+			}
+		}
+	
+	
+		const speed = isDeleting ? 50 : 100;
+		setTimeout(loop, speed);
+		}
+	
+		loop();
+	
+		function showModal() {
+			document.getElementById('modal-background').style.display = 'block';
+		}
+	
+		window.onload = function() {
+			setTimeout(showModal, 1000);
+		};
+	
+	
+		document.getElementById('close-modal').onclick = function() {
+			document.getElementById('modal-background').style.display = 'none';
+		};
+	
+		window.onclick = function(event) {
+			if (event.target === document.getElementById('modal-background')) {
+				document.getElementById('modal-background').style.display = 'none';
+			}
+		};
+		
+  </script>
+
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" defer></script>
   <script src="/static/js/particles.js" defer></script>
-  <script src="https://unpkg.com/aos@next/dist/aos.js" ></script>
-  <script id="luma-checkout" src="https://embed.lu.ma/checkout-button.js" ></script>
-  <script src="/static/plugins/jquery/jquery.js" ></script>
-  <script src="/static/plugins/bootstrap/js/bootstrap.min.js" ></script>
-  <script src="/static/plugins/smoothscroll/SmoothScroll.min.js" ></script>
-  <script src="/static/js/custom.js" ></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
+  <script id="luma-checkout" src="https://embed.lu.ma/checkout-button.js" defer></script>
+  <script src="/static/plugins/jquery/jquery.js" defer></script>
+  <script src="/static/plugins/bootstrap/js/bootstrap.min.js" defer></script>
+  <script src="/static/plugins/smoothscroll/SmoothScroll.min.js" defer></script>
+  <script src="/static/js/custom.js" defer></script>
+  
 </body>
 
 </html>
-
-
-
