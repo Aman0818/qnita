@@ -315,82 +315,166 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <div class="section-title" style="text-align: center; margin-bottom: 30px;">
-                    <h3 style="color: #ffffff; font-size: 2.5em;">
-                        EVENT <span style="background: linear-gradient(45deg, #6a00b6, #ff4081); -webkit-background-clip: text; color: transparent;">SCHEDULE</span>
-                    </h3>
-                    <p style="color: #cccccc; font-size: 1.1em;">
-                        Mark your calendars - it's time to superposition your plans! Gear up for an exciting Qiskit Fall Fest lineup packed with workshops, tutorials, hackathons, and everything quantum. Don't let this event slip out of your orbit.
-                    </p>
+                <div class="section-title">
+                    <h3>EVENT <span class="alternate">SCHEDULE</span></h3>
+                    <p>Mark your calendars - it's time to superposition your plans! Gear up for an exciting Qiskit Fall Fest lineup packed with workshops, tutorials, hackathons, and everything quantum. Don't let this event slip out of your orbit.</p>
                 </div>
             </div>
         </div>
+        <div class="row" data-aos="zoom-out-up">
+            <div class="col-12">
+                <div class="schedule-tab">
+                    <ul class="nav nav-pills text-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="nov20-tab" data-toggle="pill" href="#nov20" role="tab">
+                                WEEK-01
+                                <span>27 OCT - 3 NOV</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="nov21-tab" data-toggle="pill" href="#nov21" role="tab">
+                                WEEK-02
+                                <span>4 NOV - 10 NOV</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
 
-        <div class="schedule-tab">
-            <ul class="nav nav-pills justify-content-center">
-                <li class="nav-item">
-                    <a class="nav-link active" id="week1-tab" data-toggle="pill" href="#week1" role="tab">
-                        WEEK 01
-                        <span>27 OCT - 3 NOV</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="week2-tab" data-toggle="pill" href="#week2" role="tab">
-                        WEEK 02
-                        <span>4 NOV - 10 NOV</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-
-        <div class="tab-content" id="scheduleTabContent">
-            <!-- Week 1 Content -->
-            <div class="tab-pane fade show active" id="week1" role="tabpanel" aria-labelledby="week1-tab">
-                <ul class="schedule-list">
-                    <li class="schedule-heading">
-                        <div class="time">Date & Time</div>
-                        <div class="speaker">Speaker</div>
-                        <div class="subject">Subject</div>
-                        <div class="venue">Venue</div>
-                    </li>
-                    <li class="schedule-item">
-                        <div class="time"><i class="fa fa-calendar"></i> 27 OCT</div>
-                        <div class="speaker">
-                            <img src="/static/images/speakers/AditiLal.jpeg" alt="Aditi Lal" class="speaker-img">
-                            <span class="name">Aditi Lal</span>
+                <div class="schedule-contents">
+                    <div class="tab-content" id="pills-tabContent">
+                        <!-- Week 1 Content -->
+                        <div class="tab-pane fade show active schedule-item" id="nov20" role="tabpanel" aria-labelledby="nov20-tab">
+                            <ul class="m-0 p-0">
+                                <li class="headings">
+                                    <div class="time">Date & Time</div>
+                                    <div class="speaker">Speaker</div>
+                                    <div class="subject">Subject</div>
+                                    <div class="venue">Venue</div>
+                                </li>
+                                <li class="schedule-details">
+                                    <div class="block">
+                                        <div class="time">
+                                            <i class="fa fa-calendar"></i> 27 OCT <br>
+                                        </div>
+                                        <div class="speaker">
+                                            <img src="/static/images/speakers/AditiLal.jpeg" alt="Aditi Lal" class="img-fluid">
+                                            <span class="name">ADITI LAL</span>
+                                        </div>
+                                        <div class="subject">Inaugural ceremony, Introduction to Quantum Computing, and more...</div>
+                                        <div class="venue">Online</div>
+                                    </div>
+                                </li>
+                                <li class="schedule-details">
+                                    <div class="block">
+                                        <div class="time">
+                                            <i class="fa fa-calendar"></i> 29 OCT <br>
+                                        </div>
+                                        <div class="speaker">
+                                            <img src="/static/images/speakers/JayShah.jpeg" alt="Jay Shah" class="img-fluid">
+                                            <span class="name">JAY SHAH</span>
+                                        </div>
+                                        <div class="subject">Basics of Quantum Computing</div>
+                                        <div class="venue">Online</div>
+                                    </div>
+                                </li>
+                                <li class="schedule-details">
+                                    <div class="block">
+                                        <div class="time">
+                                            <i class="fa fa-calendar"></i> 02 NOV <br>
+                                        </div>
+                                        <div class="speaker">
+                                            <img src="/static/images/speakers/AditiLal.jpeg" alt="Aditi Lal" class="img-fluid">
+                                            <span class="name">ADITI LAL</span>
+                                        </div>
+                                        <div class="subject">Application Of Quantum Computing</div>
+                                        <div class="venue">Online</div>
+                                    </div>
+                                </li>
+                                <li class="schedule-details">
+                                    <div class="block">
+                                        <div class="time">
+                                            <i class="fa fa-calendar"></i> 03 NOV <br>
+                                        </div>
+                                        <div class="speaker">
+                                            <img src="/static/images/speakers/JayShah.jpeg" alt="Jay Shah" class="img-fluid">
+                                            <span class="name">JAY SHAH</span>
+                                        </div>
+                                        <div class="subject">Mathematics & Physics involved</div>
+                                        <div class="venue">Online</div>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="subject">Inaugural Ceremony, Introduction to Quantum Computing, and more...</div>
-                        <div class="venue">Online</div>
-                    </li>
-                    <!-- Add additional events for week 1 here in the same format -->
-                </ul>
-            </div>
 
-            <!-- Week 2 Content -->
-            <div class="tab-pane fade" id="week2" role="tabpanel" aria-labelledby="week2-tab">
-                <ul class="schedule-list">
-                    <li class="schedule-heading">
-                        <div class="time">Date & Time</div>
-                        <div class="speaker">Speaker</div>
-                        <div class="subject">Subject</div>
-                        <div class="venue">Venue</div>
-                    </li>
-                    <li class="schedule-item">
-                        <div class="time"><i class="fa fa-calendar"></i> 5 NOV</div>
-                        <div class="speaker">
-                            <img src="/static/images/speakers/AditiLal.jpeg" alt="Aditi Lal" class="speaker-img">
-                            <span class="name">Aditi Lal</span>
+                        <!-- Week 2 Content -->
+                        <div class="tab-pane fade schedule-item" id="nov21" role="tabpanel" aria-labelledby="nov21-tab">
+                            <ul class="m-0 p-0">
+                                <li class="headings">
+                                    <div class="time">Date & Time</div>
+                                    <div class="speaker">Speaker</div>
+                                    <div class="subject">Subject</div>
+                                    <div class="venue">Venue</div>
+                                </li>
+                                <li class="schedule-details">
+                                    <div class="block">
+                                        <div class="time">
+                                            <i class="fa fa-calendar"></i> 5 NOV <br>
+                                        </div>
+                                        <div class="speaker">
+                                            <img src="/static/images/speakers/AditiLal.jpeg" alt="Aditi Lal" class="img-fluid">
+                                            <span class="name">ADITI LAL</span>
+                                        </div>
+                                        <div class="subject">Hands-on Gates</div>
+                                        <div class="venue">Online</div>
+                                    </div>
+                                </li>
+                                <li class="schedule-details">
+                                    <div class="block">
+                                        <div class="time">
+                                            <i class="fa fa-calendar"></i> 07 NOV <br>
+                                        </div>
+                                        <div class="speaker">
+                                            <img src="/static/images/speakers/JayShah.jpeg" alt="Jay Shah" class="img-fluid">
+                                            <span class="name">JAY SHAH</span>
+                                        </div>
+                                        <div class="subject">Various ML algorithms</div>
+                                        <div class="venue">Online</div>
+                                    </div>
+                                </li>
+                                <li class="schedule-details">
+                                    <div class="block">
+                                        <div class="time">
+                                            <i class="fa fa-calendar"></i> 10 NOV <br>
+                                        </div>
+                                        <div class="speaker">
+                                            <img src="/static/images/speakers/Prasantak.Panigrahi.jpeg" alt="Prasanta K. Panigrahi" class="img-fluid">
+                                            <span class="name">PRASANTA K. PANIGRAHI</span>
+                                        </div>
+                                        <div class="subject">Jamming, Info about Hackathon & future opportunities</div>
+                                        <div class="venue">Auditorium</div>
+                                    </div>
+                                </li>
+                                <li class="schedule-details">
+                                    <div class="block">
+                                        <div class="time">
+                                            <i class="fa fa-calendar"></i> 10 NOV <br>
+                                        </div>
+                                        <div class="speaker">
+                                            <img src="/static/images/speakers/VardaanSahgal.jpeg" alt="Vardaan Sahgal" class="img-fluid">
+                                            <span class="name">VARDAAN SAHGAL</span>
+                                        </div>
+                                        <div class="subject">Jamming, Info about Hackathon & future opportunities</div>
+                                        <div class="venue">Auditorium</div>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="subject">Hands-on Gates</div>
-                        <div class="venue">Online</div>
-                    </li>
-                    <!-- Add additional events for week 2 here in the same format -->
-                </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </section>
-
 <!--====  End of Schedule  ====-->
 
 <!--==============================
