@@ -948,27 +948,6 @@
 		}
 		
 		loop();
-		
-		function showModal() {
-		    document.getElementById('modal-background').style.display = 'block';
-		}
-		
-		window.onload = function() {
-		    setTimeout(showModal, 1000);
-		};
-		
-		
-		document.getElementById('close-modal').onclick = function() {
-		    document.getElementById('modal-background').style.display = 'none';
-		};
-		
-		window.onclick = function(event) {
-		    if (event.target === document.getElementById('modal-background')) {
-		        document.getElementById('modal-background').style.display = 'none';
-		    }
-		};
-
-		
   </script>
 
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" defer></script>
