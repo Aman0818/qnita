@@ -1,7 +1,6 @@
 from flask import Flask, render_template, request
-from flask_compress import Compress
 app = Flask(__name__)
-Compress(app)
+
 @app.errorhandler(404)
 def page_not_found(e):
     return render_template('404.html'), 404
