@@ -11,6 +11,29 @@ body {
   background-color: #000000;
   color: white !important;
 }
+.download-btn {
+  display: inline-block;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: 1px solid white;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.3s, background 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.download-btn:hover {
+  transform: scale(1.05); 
+  background: linear-gradient(180deg, #4b0082, #8a2be2);
+  border: none;
+  color: white;
+}
+
+.download-btn:active {
+  transform: scale(0.98); 
+}
 
 #loader {
   position: fixed;
