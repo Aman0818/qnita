@@ -25,6 +25,9 @@
 
 </head>
 <body class="body-wrapper">
+<div class="loader">
+    <span></span>
+</div>
 <nav style="background-color: rgba(0, 0, 0, 0.8); box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); padding: 10px 0;" class="navbar fixed-top navbar-expand-lg">
   <div class="container-fluid">
 
@@ -868,8 +871,10 @@
 		});
   </script>
   <script>
-	
-	
+		  document.addEventListener("DOMContentLoaded", () => {
+		  document.getElementById("loader").style.display = "none";
+		  document.getElementById("content").style.display = "block";
+		});
 		const phrases = ["Quantum Computing Event", "Event Hosted By NIT Agartala", "Quantum Event", "Hackathon & much more..."];
 		let i = 0;
 		let j = 0;
